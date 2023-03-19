@@ -365,7 +365,25 @@ template {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MonserratT";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MonserratT";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: "MonserratT";
+  font-weight: regular;
+}
+
 .container {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -413,6 +431,10 @@ template {
 }
 .nav-menu__list-item:last-child {
   margin-right: 0px;
+}
+.nav-menu__list-item a {
+  text-decoration: none;
+  color: black;
 }
 
 .left-wrapper {
@@ -502,6 +524,7 @@ template {
   font-size: 72px;
   position: relative;
   margin: 0px 0px 5px 0px;
+  font-weight: bold;
 }
 .title__hr {
   width: 65px;
@@ -525,6 +548,7 @@ template {
   border: none;
   font-size: 18px;
   color: white;
+  font-weight: bold;
 }
 .buttons__icon-btn {
   display: inline-flex;
@@ -621,6 +645,7 @@ template {
   position: absolute;
   top: 144px;
   right: -45px;
+  font-weight: bold;
 }
 
 .cards-item_orange {
@@ -644,4 +669,68 @@ template {
 }
 .icons-item__text span {
   font-size: 48px;
+  font-weight: bold;
+}
+
+.third-section {
+  position: relative;
+  min-height: 640px;
+  background: #f0f0f0;
+  overflow: hidden;
+  z-index: 0;
+}
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 167px;
+  padding-top: 46px;
+}
+.third-section__right-wrapper {
+  min-width: 480px;
+  padding-left: 167px;
+}
+.third-section__right-title {
+  margin-bottom: 20px;
+}
+.third-section__text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.third-section__first-elipse {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+  z-index: -1;
+}
+.third-section__figure {
+  position: absolute;
+  top: 249px;
+  left: 15px;
+  z-index: -1;
+}
+.third-section__second-elipse {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+}
+
+.title__hr-top {
+  bottom: 75px;
+}
+
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0px;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__ttile {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
